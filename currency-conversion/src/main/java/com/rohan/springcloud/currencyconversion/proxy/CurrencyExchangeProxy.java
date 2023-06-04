@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 // here the name is then name of the component that we want to connect
 //
-@FeignClient(name="currency-exchange", url = "localhost:8000")
+//@FeignClient(name="currency-exchange", url = "localhost:8000")
+@FeignClient(name="currency-exchange")
 public interface CurrencyExchangeProxy {
 
     @GetMapping("/currency-exchange/from/{from}/to/{to}")
